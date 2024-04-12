@@ -1,0 +1,18 @@
+name: 📝 New Task
+description: Create a new task for a user story or feature
+title: "[TASK] <title>"
+labels: ["Task", "Triage"]
+body:
+- type: textarea
+  attributes:
+    label: Description
+    description: Provide detailed information about the task.
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Parent User Story 
+    description: |
+      If this task is related to a user story, please provide the user story number or link.
+  validations:
+    required: false

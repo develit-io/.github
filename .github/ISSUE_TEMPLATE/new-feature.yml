@@ -1,0 +1,38 @@
+name: 🚀 New Feature
+description: Propose a new feature
+title: "[FEATURE] <title>"
+labels: ["Feature", "Triage"]
+body:
+- type: textarea
+  attributes:
+    label: Description
+    description: A concise description of the new feature.
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Parent Issue
+    description: |
+      If this feature is related to an existing issue, please provide the issue number or link.
+  validations:
+    required: false
+- type: dropdown
+  id: business-priority
+  attributes:
+    label: Business Priority
+    description: |
+      Set the priority of this user story.
+    options:
+      - HIGH
+      - MEDIUM
+      - LOW
+    default: 1
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Anything else?
+    description: |
+      Any additional information or context you'd like to provide about this feature proposal.
+  validations:
+    required: false

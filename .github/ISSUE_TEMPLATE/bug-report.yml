@@ -1,7 +1,7 @@
 name: 🐞 Bug Report
 description: File a bug/issue
 title: "[BUG] <title>"
-labels: ["bug", "Triage"]
+labels: ["Bug", "Triage"]
 body:
 - type: checkboxes
   attributes:
@@ -33,21 +33,32 @@ body:
       1. See error...
   validations:
     required: false
-- type: textarea
+- type: dropdown
   attributes:
-    label: Environment
-    description: |
-      examples:
-        - **OS**: Ubuntu 20.04
-        - **Node**: 13.14.0
-        - **npm**: 7.6.3
-    value: |
-        - OS:
-        - Node:
-        - npm:
-    render: markdown
+    label: Operating system
+    description: What operating system are you using?
+    options:
+      - macOS
+      - Linux
+      - Windows
+      - Other
+    default: 0
   validations:
-    required: false
+    required: true
+- type: dropdown
+  attributes:
+    label: Browser
+    description: What browser are you using?
+    options:
+      - Chrome
+      - Brave
+      - Firefox
+      - Safari
+      - Edge
+      - Other
+    default: 0
+  validations:
+    required: true
 - type: textarea
   attributes:
     label: Anything else?

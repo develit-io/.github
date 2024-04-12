@@ -1,0 +1,61 @@
+name: 📖 User Story
+description: Define a user story for a feature or improvement
+title: "[USER STORY] <title>"
+labels: ["UserStory", "Triage"]
+body:
+- type: input
+  attributes:
+    label: As a
+    description: |
+     Who is the user or stakeholder involved?
+     Example: As a user, As a developer, As a project manager, etc.
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: I want
+    description: |
+      What is the user's goal or objective?
+      Example: to create, to view, to manage, etc.
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: So that
+    description: | 
+      Why does the user want to achieve this goal? What is the benefit?
+      Example: so that I can, so that I know, so that I have, etc.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Acceptance Criteria
+    description: |
+      Define the conditions that must be met for this user story to be considered complete.
+      Example:
+      - Given [context], When [action], Then [result].
+      - Given that I am a registered user on the cryptocurrency exchange platform, 
+        When I log in to my account, 
+        Then I should be able to see my account balance and transaction history.
+  validations:
+    required: true
+- type: dropdown
+  id: business-priority
+  attributes:
+    label: Business Priority
+    description: |
+      Set the priority of this user story.
+    options:
+      - HIGH
+      - MEDIUM
+      - LOW
+    default: 1
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Anything else?
+    description: |
+      Any additional information or context you'd like to provide about this user story.
+  validations:
+    required: false
