@@ -5,7 +5,7 @@ labels: ["UserStory", "Triage"]
 body:
 - type: textarea
   attributes:
-    label: Related Featurs
+    label: Related Features
     description: |
       If this task is related to other issues, please provide the issue reference with #.
   validations:

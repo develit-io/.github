@@ -11,7 +11,7 @@ body:
     required: true
 - type: textarea
   attributes:
-    label: Related User Stories, Featurs, etc
+    label: Related User Stories, Features, etc
     description: |
       If this task is related to other issues, please provide the issue reference with #.
   validations:
