@@ -41,6 +41,8 @@ body:
       - macOS
       - Linux
       - Windows
+      - Android
+      - iOS
       - Other
     default: 0
   validations:
