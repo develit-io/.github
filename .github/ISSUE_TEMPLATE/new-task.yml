@@ -9,10 +9,10 @@ body:
     description: Provide detailed information about the task.
   validations:
     required: true
-- type: input
+- type: textarea
   attributes:
-    label: Parent User Story 
+    label: Related User Stories, Featurs, etc
     description: |
-      If this task is related to a user story, please provide the user story number or link.
+      If this task is related to other issues, please provide the issue reference with #.
   validations:
     required: false

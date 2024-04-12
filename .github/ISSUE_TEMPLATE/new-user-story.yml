@@ -3,6 +3,13 @@ description: Define a user story for a feature or improvement
 title: "[USER STORY] <title>"
 labels: ["UserStory", "Triage"]
 body:
+- type: textarea
+  attributes:
+    label: Related Featurs
+    description: |
+      If this task is related to other issues, please provide the issue reference with #.
+  validations:
+    required: false
 - type: input
   attributes:
     label: As a
@@ -33,10 +40,12 @@ body:
     description: |
       Define the conditions that must be met for this user story to be considered complete.
       Example:
-      - Given [context], When [action], Then [result].
       - Given that I am a registered user on the cryptocurrency exchange platform, 
         When I log in to my account, 
         Then I should be able to see my account balance and transaction history.
+    value: |
+      - [ ] Given [context], When [action], Then [result].
+      - [ ] Given [context], When [action], Then [result].
   validations:
     required: true
 - type: dropdown
